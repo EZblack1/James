@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11-jre-jammy 
+FROM eclipse-temurin:17-jre-jammy 
  
 # Use a imagem base do OpenJDK 11
  
@@ -12,6 +12,6 @@ COPY target/james-0.0.1-SNAPSHOT.jar myapp.jar
  
 EXPOSE 5000   
  
-# Expõe a porta 8080 para acesso externo
+# Expõe a porta 5000 para acesso externo
  
 CMD ["java", "-jar", "myapp.jar"]
